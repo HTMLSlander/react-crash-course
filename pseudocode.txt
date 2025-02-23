@@ -1,0 +1,106 @@
+npm create vite@latest react-crash-2024
+
+Select react
+Select JavaScript
+
+(Create a set up react kit)
+
+
+
+vite.config.js (imports vite and react)
+
+npm install
+
+
+npm run dev
+
+Open main.jsx
+
+Delete app.css
+
+delete all the content from app.jsx
+stay on App.jsx
+
+
+delete everything from index.css
+search instal (x framework) in vite
+
+on App.jsx you can code like JavaScript
+
+
+copy paste all the static website
+
+
+create 'components' folder in src folder
+create .jsx components for each section (Navbar, Hero, etc)
+
+props: attributes that you set up on apple and you export to the component you want to apply to. you need to define as a variable on the component function
+
+types of layout in the component function:
+self closing tags
+
+normal tags like html
+
+you can comment only with parent tags without name on the element
+
+npm i react-icons
+
+npm i react-router-dom
+
+
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+
+import { FaMapMarker } from "react-icons/fa";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<h1>Hello there</h1>} />)
+);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+
+After downloading router App.jsx:
+
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<HomePage />} />)
+);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+
+go to Navbar.jsx  
+import { Link } from "react-router-dom";
+
+change anchor to Link and href to 'to' and the src to '/'
+
+isActive is a pre-added function in react
+
+add NavLink on navbar jsx file  
+
+
+npm i -D json-server
+
+--watch --port
+
+
+
+try catch finally for fetching data
+
+
+npm i react-spinners
+
+
+
+
